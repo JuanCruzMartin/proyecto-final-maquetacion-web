@@ -67,6 +67,7 @@ header{
     font-size: 35px;
     z-index: 101;/*para que este sobre el header*/
     cursor: pointer;/*para cuando paso el cursor por arriba cambie*/
+    display: none;
 }
 
 .hero{
@@ -262,8 +263,8 @@ section{
         margin: 7px 0;
     }
 
-
-    #menu-toggle:checked + label.menu-icon-action + ul{
+    .navlist.open{
         right: 0;
     }
+
 }
