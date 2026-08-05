@@ -32,22 +32,22 @@
    
 
         <ul class="navlist">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre Mi</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre-mi">Sobre Mi</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
 
     </header>
         <!-- HERO SECTION -->
-         <section class="hero">
+         <section class="hero" id="home">
             <div class="hero-text">
                 <h5>Profesional developer</h5>
-                <h4>Front End</h4>
+                <h4>Front End & Back End</h4>
                 <h1>Juan Cruz Martin</h1>
                 <p>Mejora tu sitio web de la manera mas profesional y personalizada <br>Con la mejor calidad y atencion.</p>
-                <a href="#">CV</a>
-                <a href="#" class="videos"><i class="ri-play-fill"></i>Mira mis trabajos</a>               
+                <a href="assets/CV-Juan-Cruz-Martin.pdf" target="_blank" rel="noopener" download>CV</a>
+                <a href="#portfolio" class="videos"><i class="ri-play-fill"></i>Mira mis trabajos</a>
             </div>
             <div class="hero-img">
                 <img src="assets/foto-perfil.jpeg" alt="img juan cruz martin">
@@ -55,14 +55,218 @@
          </section>
 
         <div class="icons">
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href=""><i class="ri-linkedin-box-fill"></i></a>
-                <a href=""><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/martinjuancruz" target="_blank" rel="noopener"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/JuanCruzMartin" target="_blank" rel="noopener"><i class="ri-github-fill"></i></a>
         </div>
         <div class="scroll-down">
-            <a href="#"><i class="ri-arrow-down-line"></i></a>
+            <a href="#sobre-mi"><i class="ri-arrow-down-line"></i></a>
         </div>
 
+        <!-- SOBRE MI SECTION -->
+        <section class="about" id="sobre-mi">
+            <div class="about-text">
+                <h5>Conoceme un poco más</h5>
+                <h2>Sobre Mí</h2>
+                <p>
+                    Estoy cursando el segundo año de la carrera de Analista en Sistemas, orientando mi formación
+                    al desarrollo de software con foco en Java y desarrollo web. Estoy en la búsqueda de mi
+                    primera oportunidad profesional en tecnología, con muchas ganas de aprender y aportar desde
+                    el primer día.
+                </p>
+                <p>
+                    Antes de programar trabajé en instituciones de alta exigencia como el Hospital FLENI y la
+                    Clínica ALCLA. Ahí afiancé pensamiento analítico, responsabilidad y comunicación efectiva —
+                    habilidades que hoy traslado al desarrollo de software, con foco en la calidad y el
+                    cumplimiento de objetivos.
+                </p>
+                <div class="skills">
+                    <span>Java</span>
+                    <span>POO</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>MySQL</span>
+                </div>
+            </div>
+            <div class="about-details">
+                <div class="detail-item">
+                    <i class="ri-map-pin-line"></i>
+                    <span>Martínez, Buenos Aires</span>
+                </div>
+                <div class="detail-item">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:juancruzmm96@gmail.com">juancruzmm96@gmail.com</a>
+                </div>
+                <div class="detail-item">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+541135252510">11 3525 2510</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section class="portfolio" id="portfolio">
+            <h5>Mi trabajo</h5>
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+
+                <div class="portfolio-card featured">
+                    <div class="card-preview">
+                        <iframe src="https://librorank-next.vercel.app/" tabindex="-1" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h3>LibroRank</h3>
+                        <p>Plataforma para llevar registro de libros leídos, calificarlos y competir en un
+                            ranking global con amigos. Backend propio en Java con Servlets/JSP y MySQL.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>Servlets/JSP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://librorank-next.vercel.app/" target="_blank" rel="noopener">Ver demo</a>
+                            <a href="https://github.com/JuanCruzMartin/librorank" target="_blank" rel="noopener"><i class="ri-github-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="card-preview">
+                        <iframe src="https://practica-carga-libro-con-portada-reac.netlify.app/" tabindex="-1" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h3>Biblioteca con portadas</h3>
+                        <p>Alta de libros con búsqueda automática de portada, hecha en React.</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://practica-carga-libro-con-portada-reac.netlify.app/" target="_blank" rel="noopener">Ver demo</a>
+                            <a href="https://github.com/JuanCruzMartin/agregado-de-portada-a-biblioteca" target="_blank" rel="noopener"><i class="ri-github-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="card-preview">
+                        <iframe src="https://carrito-compras-proyecto-dh.netlify.app/" tabindex="-1" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h3>Carrito de compras</h3>
+                        <p>E-commerce simple con carrito de compras funcional, hecho en React + Vite.</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>Vite</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://carrito-compras-proyecto-dh.netlify.app/" target="_blank" rel="noopener">Ver demo</a>
+                            <a href="https://github.com/JuanCruzMartin/proyecto-carrito-compras-react" target="_blank" rel="noopener"><i class="ri-github-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="card-preview">
+                        <iframe src="https://aplicacion-peliculas-react-digital.netlify.app/" tabindex="-1" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h3>Buscador de películas</h3>
+                        <p>Buscador de películas consumiendo una API externa, hecho en React.</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>API</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://aplicacion-peliculas-react-digital.netlify.app/" target="_blank" rel="noopener">Ver demo</a>
+                            <a href="https://github.com/JuanCruzMartin/aplicacion-peliculas-react" target="_blank" rel="noopener"><i class="ri-github-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="card-preview">
+                        <iframe src="https://aplicacion-clima-react-css.netlify.app/" tabindex="-1" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h3>App del clima</h3>
+                        <p>Consultá el clima de cualquier ciudad en tiempo real, hecha en React.</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>API</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://aplicacion-clima-react-css.netlify.app/" target="_blank" rel="noopener">Ver demo</a>
+                            <a href="https://github.com/JuanCruzMartin/app-clima-react" target="_blank" rel="noopener"><i class="ri-github-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="card-preview">
+                        <iframe src="https://paginadecomentarios.netlify.app/" tabindex="-1" loading="lazy"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h3>Red social de comentarios</h3>
+                        <p>Mini red social para publicar comentarios, manipulando el DOM con JavaScript puro.</p>
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>DOM</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://paginadecomentarios.netlify.app/" target="_blank" rel="noopener">Ver demo</a>
+                            <a href="https://github.com/JuanCruzMartin/Pagina-Comentarios-hecha-con-js-" target="_blank" rel="noopener"><i class="ri-github-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <script>
+            function scalePortfolioPreviews(){
+                document.querySelectorAll('.card-preview').forEach(function(wrapper){
+                    var iframe = wrapper.querySelector('iframe');
+                    var virtualWidth = 1300;
+                    var scale = wrapper.offsetWidth / virtualWidth;
+                    iframe.style.width = virtualWidth + 'px';
+                    iframe.style.height = (wrapper.offsetHeight / scale) + 'px';
+                    iframe.style.transform = 'scale(' + scale + ')';
+                });
+            }
+            window.addEventListener('load', scalePortfolioPreviews);
+            window.addEventListener('resize', scalePortfolioPreviews);
+        </script>
+
+        <!-- CONTACTO SECTION -->
+        <section class="contact" id="contacto">
+            <h5>Trabajemos juntos</h5>
+            <h2>Contacto</h2>
+            <p>
+                Estoy en la búsqueda de mi primera oportunidad profesional en tecnología. Escribime,
+                respondo rápido.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:juancruzmm96@gmail.com" class="contact-btn primary">
+                    <i class="ri-mail-line"></i> juancruzmm96@gmail.com
+                </a>
+                <a href="tel:+541135252510" class="contact-btn">
+                    <i class="ri-phone-line"></i> 11 3525 2510
+                </a>
+                <a href="https://www.linkedin.com/in/martinjuancruz" target="_blank" rel="noopener" class="contact-btn">
+                    <i class="ri-linkedin-box-fill"></i> LinkedIn
+                </a>
+                <a href="https://github.com/JuanCruzMartin" target="_blank" rel="noopener" class="contact-btn">
+                    <i class="ri-github-fill"></i> GitHub
+                </a>
+            </div>
+            <p class="location"><i class="ri-map-pin-line"></i> Martínez, Buenos Aires</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Juan Cruz Martin</p>
+        </footer>
 
 </body>
 </html>
